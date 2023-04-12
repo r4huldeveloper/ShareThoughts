@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width",initial-scale=1.0" >
+<title>Share Thoughts</title>
+
+<style>
+  
+  Body{
+    background-color: lightblue;
+ 
+  }
+  
+  .container{
+    padding: 25px;
+    background-color: lightblue;
+
+  }
+  
+  button{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0px;
+    color: orange;
+    background-color: #4CAF50;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover{
+    opacity: 0.8;
+  }
+  
+  form {
+    border: 3px solid #f1f1f1;
+    width: 30%;
+    margin-left: 35%;
+  }
+  
+  input[type=text], input[type=email]{
+   margin: 8px;
+   display: inline-block;
+   border: 2px solid green;
+   box-sizing: border-box;
+   padding: 10px;
+  }
+  
+  .gender, .chkbox, .place{
+    margin-top: 12px;
+  }
+  
+  .gender input{
+    margin-top: 8px;
+  }
+  
+ 
+</style>
+
+</head>
+
+<body>
+   
+  <h1 style="text-align: center">Register here</h1>
+   <form action="home" method="post">
+   
+       <div class="container">    
+         <label id="name"><b>Enter your FullName</b><br>
+           <input type="text" name="username" style="width:100%" placeholder="Your name" required>
+         </label><br>
+         
+         <label id="email"><b>Enter your Email</b><br>
+           <input type="email" name="email" style="width:100%" placeholder="Your email" required>
+         </label><br>
+         
+       <div class="gender">
+         <label><b>Mark your Gender:</b></label><br>
+         <input type="radio" name="gender" id="gender" value="male"/>Male<br>
+         <input type="radio" id="gender" name="gender" value="female"/>Female<br>
+         <input type="radio" id="gender" name="gender" value="others"/>Other<br>
+       </div>
+       
+       <div class="chkbox">
+         <label><b>Area of interest</b></label><br>
+         <input type="checkbox"  id="technology" name="technology" checked="checked" value="technology"/>
+         <label for="technology">Technology</label><br>
+         <input type="checkbox" id="programming" name="programming" value="programming"/>
+         <label for="programming">Programming</label><br>
+         <input type="checkbox" id="hacking" name="hacking" value="hacking"/>
+         <label for="hacking">Cyber Security</label><br>
+         <input type="checkbox" id="db" name="db" value="db"/>
+         <label for="db">Databases</label><br>
+         <input type="checkbox" id="networking" name="networking" value="networking"/>
+         <label for="networking">Networking</label>
+       </div>
+       
+       <div class="place">
+         <label><b>Country Name</b>
+           <select name="usercountry" id="country" required>
+             <option value="india">India</option>
+             <option value="pakistan">Pakistan</option>
+             <option value="us">USA</option>
+             <option value="russia">Russia</option>
+             <option value="canada">Canada</option>
+             <option value="germany">Germany</option>
+             <option value="china">China</option>
+             <option value="other">Other</option>
+           </select>
+         </label>
+        </div><br>
+        
+          <div>
+            <button name="submit_btn" type="button" value="submit_btn" style="color:black">Register</button>
+          </div>
+     </div>
+   </form>
+
+</body>
+</html>
