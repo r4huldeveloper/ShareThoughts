@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width",initial-scale=1.0" >
+<meta charset='utf-8'>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Share Thoughts</title>
 
 <style>
   
   Body{
     background-color: lightblue;
+    max-width: 100%;
  
   }
   
@@ -18,17 +19,17 @@
 
   }
   
-  button{
+  .submit input{
     width: 100%;
-    padding: 10px;
-    margin: 10px 0px;
-    color: orange;
     background-color: #4CAF50;
-    border: none;
+    margin: 10px 0px;
     cursor: pointer;
+    color: orange;
+    padding: 10px;
+  
   }
   
-  button:hover{
+  .submit input:hover{
     opacity: 0.8;
   }
   
@@ -65,53 +66,53 @@
    <form action="home" method="post">
    
        <div class="container">    
-         <label id="name"><b>Enter your FullName</b><br>
+           <label id="name"><b>Enter your FullName</b><br>
            <input type="text" name="username" style="width:100%" placeholder="Your name" required>
          </label><br>
          
          <label id="email"><b>Enter your Email</b><br>
-           <input type="email" name="email" style="width:100%" placeholder="Your email" required>
+           <input type="email" name="useremail" style="width:100%" placeholder="Your email" required>
          </label><br>
          
        <div class="gender">
          <label><b>Mark your Gender:</b></label><br>
-         <input type="radio" name="gender" id="gender" value="male"/>Male<br>
-         <input type="radio" id="gender" name="gender" value="female"/>Female<br>
-         <input type="radio" id="gender" name="gender" value="others"/>Other<br>
+         <input type="radio" name="gender" id="male" value="Male"/>Male<br>
+         <input type="radio" name="gender" id="female" value="Female"/>Female<br>
+         <input type="radio" name="gender" id="other" value="Other"/>Other<br>
        </div>
        
        <div class="chkbox">
          <label><b>Area of interest</b></label><br>
-         <input type="checkbox"  id="technology" name="technology" checked="checked" value="technology"/>
+         <input type="checkbox"  id="technology" name="option" checked="checked" value="Technology"/>
          <label for="technology">Technology</label><br>
-         <input type="checkbox" id="programming" name="programming" value="programming"/>
+         <input type="checkbox" id="programming" name="option" value="Programming"/>
          <label for="programming">Programming</label><br>
-         <input type="checkbox" id="hacking" name="hacking" value="hacking"/>
+         <input type="checkbox" id="hacking" name="option" value="Hacking"/>
          <label for="hacking">Cyber Security</label><br>
-         <input type="checkbox" id="db" name="db" value="db"/>
+         <input type="checkbox" id="db" name="option" value="Database"/>
          <label for="db">Databases</label><br>
-         <input type="checkbox" id="networking" name="networking" value="networking"/>
+         <input type="checkbox" id="networking" name="option" value="Networking"/>
          <label for="networking">Networking</label>
        </div>
        
        <div class="place">
          <label><b>Country Name</b>
            <select name="usercountry" id="country" required>
-             <option value="india">India</option>
-             <option value="pakistan">Pakistan</option>
-             <option value="us">USA</option>
-             <option value="russia">Russia</option>
-             <option value="canada">Canada</option>
-             <option value="germany">Germany</option>
-             <option value="china">China</option>
-             <option value="other">Other</option>
+             <option value="India">India</option>
+             <option value="Pakistan">Pakistan</option>
+             <option value="USA">USA</option>
+             <option value="Russia">Russia</option>
+             <option value="Canada">Canada</option>
+             <option value="Germany">Germany</option>
+             <option value="China">China</option>
+             <option value="Other">Other</option>
            </select>
          </label>
         </div><br>
         
-          <div>
-            <button name="submit_btn" type="button" value="submit_btn" style="color:black">Register</button>
-          </div>
+        <div class="submit">
+          <input type="submit" name="submit-btn" value="Register" style="color:black"/>
+        </div>
      </div>
    </form>
 
