@@ -2,20 +2,21 @@
 <html lang="en-US">
 <head>
 <meta charset='utf-8'>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Share Thoughts</title>
 
 <style>
   
   Body{
-    background-color: lightblue;
+   background-color: lightblue;
     max-width: 100%;
  
   }
   
   .container{
     padding: 25px;
-    background-color: lightblue;
+    background-color: lightaqua;
 
   }
   
@@ -24,24 +25,26 @@
     background-color: #4CAF50;
     margin: 10px 0px;
     cursor: pointer;
-    color: orange;
+    border: 2px solid green;
     padding: 10px;
-  
+    transform: transform 0.3s ease-in-out;
   }
+  
+  
   
   .submit input:hover{
     opacity: 0.8;
+    transform: scale(1.03);
   }
   
   form {
-    border: 3px solid #f1f1f1;
+    border: 3px solid white;
     width: 30%;
     margin-left: 35%;
   }
   
   input[type=text], input[type=email]{
    margin: 8px;
-   display: inline-block;
    border: 2px solid green;
    box-sizing: border-box;
    padding: 10px;
@@ -55,6 +58,9 @@
     margin-top: 8px;
   }
   
+  #country{
+   max-width:50%;
+  }
  
 </style>
 
@@ -63,7 +69,7 @@
 <body>
    
   <h1 style="text-align: center">Register here</h1>
-   <form action="home" method="post">
+   <form id="register-form" action="#" method="post">
    
        <div class="container">    
            <label id="name"><b>Enter your FullName</b><br>
@@ -111,10 +117,17 @@
         </div><br>
         
         <div class="submit">
-          <input type="submit" name="submit-btn" value="Register" style="color:black"/>
+          <input id=submit-btn type="submit" name="submit-btn" value="Register" style="color:black"/>
         </div>
+        
+        <div id="loader" class="hidden"></div>
+        <div id="success-msg" class="hidden">Registered Successfully! Thanks for registering.</div>
      </div>
    </form>
 
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+  
+  "
 </body>
 </html>
