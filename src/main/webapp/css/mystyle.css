@@ -1,0 +1,32 @@
+body{
+	background-color:	#1E90FF;
+}
+
+ .custom-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	margin-top: 40px;
+    margin-bottom: 180px;	
+}
+    
+.custom-form{
+	
+	max-width: 700px;
+	width: 100%;
+	margin: auto;
+	min-height: 500px;
+	background-color: #FFFFFF;
+	border: 2px solid white;
+}
+
+.custom-submit{
+	
+	text-align: center;
+}
+
+.custom-input {
+	border: 1px solid #A9A9A9;
+	border-radius: 0;
+}
